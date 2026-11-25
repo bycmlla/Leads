@@ -1,0 +1,30 @@
+# Dependências e build
+node_modules/
+dist/
+
+# Credenciais — nunca versionar
+.env
+.env.*
+!.env.example
+
+# Sessão autenticada / perfil do navegador (cookies, tokens, storage)
+.auth/
+playwright/.auth/
+auth.json
+storageState*.json
+sessions/
+*.cookies
+*.har
+
+# Saídas locais que podem conter dados pessoais de leads
+logs/
+artifacts/
+screenshots/
+traces/
+test-results/
+playwright-report/
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+*.log

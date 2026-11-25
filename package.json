@@ -1,0 +1,27 @@
+{
+  "name": "dione-crm",
+  "version": "1.0.0",
+  "description": "Automação de captação de leads no portal GO (Moura Dubeux) — etapa 1: autenticação, inspeção e observação",
+  "scripts": {
+    "typecheck": "tsc -p .",
+    "probe": "tsx src/scripts/probe-login.ts",
+    "diag:network": "tsx src/scripts/diag-network.ts",
+    "login": "tsx src/scripts/login.ts",
+    "inspect": "tsx src/scripts/inspect.ts",
+    "observe": "tsx src/scripts/observe.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "playwright": "^1.65.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "private": true
+}
